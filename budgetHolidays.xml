@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="goHoliday-xslt.xsl"?>
+<!--
+	Filename: budgetHolidays.xml
+	Author: Connor Marsden
+	Creation date: 09/09/2020
+-->
+
+<!DOCTYPE goHoliday
+  [
+    
+    <!ELEMENT goHoliday (package*)>
+    <!ELEMENT package (packageName, description, cost, nightNo, popularity, accommodationOptions+, couponCode?, reviews*, filenamePic+, promoURL+, availability, specialEvent*, xmlImage*)>
+    <!ELEMENT packageName (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT nightNo (#PCDATA)>
+    <!ELEMENT popularity (#PCDATA)>
+    <!ELEMENT accommodationOptions ((location, additionalCost))>
+    <!ELEMENT location (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT couponCode (#PCDATA)>
+    <!ELEMENT reviews (#PCDATA)>
+    <!ELEMENT filenamePic (#PCDATA)>
+    <!ELEMENT promoURL (#PCDATA)>
+    <!ELEMENT availability (#PCDATA)>
+    <!ELEMENT specialEvent (#PCDATA)>
+    <!ELEMENT xmlImage (#PCDATA)>
+
+  ]>
+
+
+<goHoliday>
+
+  <package>
+    <packageName> Package 1 </packageName>
+    <description>Capital city of Papua New Guinea, with the PNG National Museum and Art Gallery, plus Parliament House.</description>
+    <cost>$500 AUD</cost>
+    <nightNo>10</nightNo>
+    <popularity>3/5</popularity>
+    <accommodationOptions>
+      <location>Papua New Guinea, Port Moresby</location>
+      <additionalCost>$1500 travel and return costs </additionalCost>
+    </accommodationOptions>
+    <couponCode>WALLET</couponCode>
+    <reviews>"Great"- Steve Bills</reviews>
+    <filenamePic>images/papuanewguinea.png</filenamePic>
+    <promoURL>https://www.hilton.com/en/hotels/pomsmhi-hilton-port-moresby</promoURL>
+    <availability>24/7</availability>
+    <specialEvent>Local tribe dance</specialEvent>
+    <xmlImage>images/papuanewguinea.png</xmlImage>
+  </package>
+
+  <package>
+    <packageName> Package 2 </packageName>
+    <description>Discover the city’s Maori roots at the Museum of Wellington City and Sea and the Museum of New Zealand.</description>
+    <cost>$250 AUD</cost>
+    <nightNo>2</nightNo>
+    <popularity>3/5</popularity>
+    <accommodationOptions>
+      <location>New Zealand, Wellington</location>
+      <additionalCost>$2000 travel and return costs</additionalCost>
+    </accommodationOptions>
+    <couponCode>HILLS</couponCode>
+    <reviews>"Great friendly culture"- Will Smith</reviews>
+    <filenamePic>images/newzealand.png</filenamePic>
+    <promoURL>https://www.rydges.com/accommodation/new-zealand/wellington</promoURL>
+    <availability>24/7</availability>
+    <specialEvent>Maori Carving Less
+      on</specialEvent>
+    <xmlImage>images/newzealand.png</xmlImage>
+  </package>
+
+  <package>
+    <packageName> Package 3 </packageName>
+    <description>The big banana is if not one of Australia's greatest holiday destinations.</description>
+    <cost>$50 AUD a night</cost>
+    <nightNo>5</nightNo>
+    <popularity>2/5</popularity>
+    <accommodationOptions>
+      <location>Australia, Coffs Harbour</location>
+      <additionalCost>$10 AUD for edible food</additionalCost>
+    </accommodationOptions>
+    <couponCode>BIGBANANA</couponCode>
+    <reviews>"It's the big banana like c'mon"- Joe</reviews>
+    <filenamePic>images/bigbanana.png</filenamePic>
+    <promoURL>https://bigbanana.com</promoURL>
+    <availability>24/7</availability>
+    <specialEvent>Banana Rama</specialEvent>
+    <xmlImage>images/bigbanana.png</xmlImage>
+  </package>
+
+</goHoliday>

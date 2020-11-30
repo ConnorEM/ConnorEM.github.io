@@ -1,0 +1,201 @@
+/*
+	Filename: style.css
+    Author: Connor Marsden
+    Student number: c3349479
+	Creation date: 09/09/2020
+*/
+
+head { width: 100% } /*Setting everything in head to use 100% of the width of the page*/
+/*HTML Elements*/
+body 
+    {
+        margin: 0px 0px 0px 0px;                  /*Sets margin*/
+        color:black;                            /*Sets font color in body*/  
+        font-family:Arial, Helvetica, sans-serif; /*Sets font type in body*/
+
+    }
+
+/*Setting header function to encompass headerbox and underheaderbox*/
+header 
+    {
+        position:fixed;             /*Sets all elements within header to be fixed/locked to the page regardless of location */
+        width: 100%;                /*Sets all elements within header to use all the width of the page*/
+        margin: 0px 0px 0px 0px;    /*Sets height margin of all elements in header to be -25% from center which allows to be on top of page*/
+    }
+
+
+#location { text-align: left }
+#location img 
+    { 
+        vertical-align: top; 
+        float: left 
+    }
+
+#quick 
+    { 
+        vertical-align: top; 
+        text-align: right 
+    }
+/*ID tag*/
+#main 
+    { 
+        width: 100%; 
+        border-top-style: groove; 
+        border-bottom-style: groove; 
+    }
+    /* margin: 25px 25px 25px 25px */
+
+#menu { width: 15%; border-right-style: groove; vertical-align: top; padding: 0 }
+#menu ul { margin: 0; padding: 0 }
+#menu li { list-style-type:none; margin: 1ex 1ex 1ex 0ex; background-color: #eeeeee }
+
+/*Tag for big banana*/
+#bigBanana
+    {
+        font-family: cursive;        /*Sets font type*/
+        color: yellow;             /*Sets font color to yellow*/
+        font-size: 100%;             /*Sets font size to 100%*/
+        background-color:black;    /*Highlights in black*/
+    }
+
+/*Sets properties of goHoliday Vacations top header*/
+h1 
+    {
+        text-align: center;       /*Centers heading*/
+        font-weight:1000;         /*Sets thickness of text to 1000*/
+        color: darkred;         /*Sets color of text dark red*/ 
+        font-weight:1000;         /*Sets font thickness*/
+    }
+
+h2 { text-align: left; color: darkred;} /*Sets second header text to align left and color dark red*/
+p {text-align: left;  } /*Align paragraphs to left*/
+hr { width: 100%; height: 5px ;background-color: darkred; text-align: center; border: none; } /*For header divider lines set width of line, thickness, color and align to center with no border*/
+
+/*Hyperlink colors*/
+
+a:link {color:grey}    /*Sets off as white color*/
+a:visited {color:white} /*Changes color to grey when visted*/
+a:active{color:green}  /*Sets active color to green*/
+a:hover{font-size: 200%; color:wheat} /*Hovering over hyperlink will enlarge it by 200% and change color to wheat*/
+
+#foot { width: 100% }
+
+#valid { vertical-align: top }
+
+#copyright { text-align: right; font-size: small; font-family: 'Times New Roman', Times, serif; }
+
+kbd { font-family: monospace }
+samp { font-family: monospace }
+.menu { font-family: monospace }
+.file { font-family: monospace }
+.host { font-family: monospace }
+
+div.img { text-align: center; padding: 0.5em }
+div.img img { border-style: solid }
+
+div.toc { text-align: center; margin-left: auto; margin-right: auto }
+
+.due { font-size: large; font-weight: bold }
+strong.warning { color: #cc0000; background-color: #ffff33; border-style: none }
+.warning { text-align: center; color: #cc0000; background-color: #ffff33; border-style: outset }
+.warning h3 { font-size: x-large; text-decoration: underline }
+.warning p { font-style: italic }
+.todo { color: red }
+
+body 
+    { 
+        background: url(images/background.jpg) no-repeat center center fixed; /*Sets background image with no repeats of the image centered vertically and horizonally and fixed into position*/
+        background-size: cover; /*Sets background to cover all of page*/
+    }
+
+/*Sets property of images inserted in sidetoside box*/
+img 
+    {
+        width: 100%;
+        float: right;
+      
+    }
+
+
+
+/*Class for box surrounding header*/
+.headerbox
+    {
+        width: 100%;              /*Sets box to use all of the page width*/
+        background: white;      /*Sets color of box white*/
+        margin-top: 0%;           /*Sets margin*/
+    }
+/*sets class for box surround href links*/
+.underheaderbox
+    {
+		height: 3em;
+        width: 100%; /*sets box to use all of the page width*/
+        background: darkred;   
+        text-align: center;
+        margin-top: -25px; /*Sets underheaderbox to be pushed up to align better with headerbox*/
+    }
+
+/*Sets big text properties*/
+.bigText
+    {
+        text-align:center;      /*Aligns text to center*/
+        color:black;          /*Sets text color to black*/
+        padding: 20% 0% 0% 0%;  /*Sets padding of text to 100%*/
+        font-weight: 500;       /*Sets font weight to 500*/
+        font-size: 1000%;       /*Sets font size to 1000% of original*/
+        font-family: Arial, Helvetica, sans-serif; /*Sets font type*/
+    }
+
+/*Allows the text and image to be placed next to each other horizontally*/
+.sidetexthead
+    {
+        display:flex; 
+    }
+
+/*Sets protery of text within box*/
+.sidetext
+    {
+        float: left;
+        width: 300%;
+  
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif /*Sets font within text area*/
+    }
+
+/*Sets white background beneath curved text boxes that encompasses all of main*/
+#backgroundBox 
+    {
+        margin:70% 0% 0% 0%; /*Sets margin 70% down from north of page*/
+        background: white;
+        padding: 1%; 
+        width: cover;
+        height: 5%;
+    }
+
+/*Sets white background beneath curved text boxes that encompasses all of main*/
+#xslBackgroundBox 
+    {
+        margin:0% 5% 0%; 
+        background: white;
+        padding: 2.7%; 
+        width: 85%;
+        height: 0%;
+        border-radius: 15px;
+    }
+
+/*Sets property of curved text and image box*/
+.sidetoside
+    {
+        padding:20px;              /*Paddings around edges to be 20 pixels*/
+        float: left;               /*Sets them to be on left*/
+        width: 45%;                /*Sets width of box to 45% to allow other box next to it*/
+        height: 100%;              /*Sets height of box 100%*/
+        background: wheat;       /*Sets color of box to wheat*/
+        border-radius: 15px;       /*Sets curvature around box to have a radius of 15 pixels*/
+        margin: 0px 1.5% 0px 1.5%; /*Leaves a 1.5% gap between the two side to side boxes*/
+    }
+/*Allows the text and image boxes to be placed next to each other horizontally*/
+.sidetosideHead
+    {
+        display:flex;
+    }
+

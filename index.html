@@ -1,0 +1,110 @@
+<!--
+	Filename: index.html
+	Author: Connor Marsden
+	Student Number: c3349479
+	Creation date: 09/09/2020
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+		<!--Linking CSS-->
+		<link rel="styleSheet" href="style.css">
+		<meta charset="UTF-8">
+		<!--Setting website tab title name-->
+        <title>Home | goHoliday</title>
+    </head>
+
+	<body>
+		<header>
+			<!--References a class to format the text and box surrounding it-->		
+			<h1 class="headerbox">goHoliday Vacations</h1>
+			<!--In p references a class to format surrounding underhead box-->
+			<p class="underheaderbox">
+				<a href = 'dataCollection.html'> Recommendation Form</a>	<!--Navigates to dataCollection.xml file-->
+				<a href = "#budgetHolidays"> Naviagate Budget Holidays</a>	<!--Navigates to budgetHolidays tag-->
+				<a href = "#luxuryHolidays"> Naviagate Luxury Holidays</a>	<!--Navigates to luxuryHolidays tag-->
+				<a href = "budgetHolidays.xml"> Budget Holidays</a>			<!--Naviagates to budgetHolidays.xml file-->
+				<a href = "luxuryHolidays.xml"> Luxury Holidays</a>			<!--Naviagates to luxuryHolidays.xml file-->
+				<a href = "https://www.flightcentre.com.au/"> Book Here!</a><!--Naviagates to external website-->
+			</p>
+		</header>
+
+		<!--Within a div reference a class that makes text big-->
+		<div class="bigText">BOOK TODAY</div>
+
+		<!--Adds tag that formats white box surrounding all of main-->
+        <main id="backgroundBox">	
+			<!--Adds parent class to sidetoside-->
+			<section class="sidetosideHead">
+
+				<!--Adds class to text and image area for budget holidays to be in parallel with luxury holidays-->
+				<section class="sidetoside">
+					<!--Secondary header for budget holidays with a tag to be referenced and navigated to-->
+					<h2 id=budgetHolidays>Budget Holidays</h2><hr>
+						<!--Adds parent class to sidetext and img-->
+						<div class="sidetexthead">
+							<!--Adds class to text to be parallel with images-->
+							<div class="sidetext">
+								<!--Adds italic style and breaks line-->
+								<i>Looking for a break but on a budget? </i><br>
+								Take a look at all the cheap holiday deals!
+								<!--Adds paragraph break, bold text style and abbreviation for Papua New Guinea-->
+								<p><b>Package 1</b> - Capital city of Papua New Guinea, with the <abbr title="Papua New Guinea">PNG</abbr> National Museum and Art Gallery, plus Parliament House.</p>
+								<p><b>Package 2</b> - Discover the city’s Maori roots at the Museum of Wellington City and Sea and the Museum of New Zealand.</p>
+								<!--Adds paragraph breakm bold and empathised style as well as include bigBanna class-->
+								<p><b><em>Package 3</em></b> - The <span id="bigBanana">big banana</span> is the best if not one of Australia's greatest holiday destinations.</p>
+							</div>
+
+							<!--Citing images used-->
+							<!--<blockquote cite="https://www.bookmundi.com/papua-new-guinea/tour-operators"> </blockquote> 
+							<blockquote	cite="https://www.flightcentre.com.au/holidays/hamilton-island"></blockquote> 
+							<blockquote	cite="https://www.big4.com.au/caravan-parks/nsw/coffs-harbour"> </blockquote>-->
+							<!--Adding class to properly orientate inserted images-->
+							<span class="img">
+								<p><img src="images/papuanewguinea.png" alt="Papua New Guinea"></p>
+								<p><img src="images/newzealand.png" alt="New Zealand"></p>
+								<p><img src="images/bigbanana.png" alt="Australia Banana"></p>
+							</span>
+						</div>
+				</section>
+
+				<!--Adds class to text and image area for luxury holidays to be in parallel with budget holidays-->
+				<section class="sidetoside">
+					<!--Secondary header for luxury holidays with a tag to be referenced and navigated to-->
+					<h2 id=luxuryHolidays>Luxury Holidays</h2><hr>
+						<!--Adds parent class to sidetext and img-->
+						<div class="sidetexthead">
+							<!--Adds italic style and breaks line-->
+							<div class="sidetext">
+								<i>Have money to spare? </i><br>
+								Take a look at all these luxury deals!
+								<p><b>Package 1</b> - Visit Australia's greatest wonder Uluru.</p>
+								<p><b>Package 2</b> - Explore the great flora and fauna in this safari hotel.</p>
+								<p><b>Package 3</b> - Experience true luxury in the center of Germany's capital, Berlin.</p>
+							</div>
+
+							<!--Citing images used-->
+							<!--<blockquote cite="https://www.flightcentre.com.au/holidays/uluru"></blockquote>
+							<blockquote cite="https://www.flightcentre.com.au/holidays/south-africa"></blockquote>
+							<blockquote cite="https://getsready.com/berlin-germany/"></blockquote>-->
+							<!--Adding class to properly orientate inserted images-->
+							<span class="img">
+								<p><img src="images/uluru.jpg" alt="Australia Uluru"><p/>
+								<p><img src="images/southafrica.png" alt="South Africa"><p/>
+								<p><img src="images/germany.png" alt="Germany"></p>
+							</span>
+						</div>			
+				</section>
+
+			</section>
+			<address id="copyright"> <!--Adds copyright class-->
+				Copyright (c) 2020 by Connor Marsden (c3349479)<br/>
+				<a href="https://www.google.com.au">c3349479@uon.edu.au</a><br/>
+				SENG1050 - Assignment 2<br/> 
+			</address>
+		</main>
+   </body>
+
+</html>

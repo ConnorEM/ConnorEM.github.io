@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="goHoliday-xslt.xsl" type="text/xsl"?>
+<!--
+	Filename: luxuryHolidays.xml
+	Author: Connor Marsden
+	Creation date: 09/09/2020
+-->
+
+<!DOCTYPE goHoliday
+  [
+    
+    <!ELEMENT goHoliday (package*)>
+    <!ELEMENT package (packageName, description, cost, nightNo, popularity, accommodationOptions+, couponCode?, reviews*, filenamePic+, promoURL+, availability, specialEvent*, xmlImage*)>
+    <!ELEMENT packageName (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT nightNo (#PCDATA)>
+    <!ELEMENT popularity (#PCDATA)>
+    <!ELEMENT accommodationOptions ((location, additionalCost))>
+    <!ELEMENT location (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT couponCode (#PCDATA)>
+    <!ELEMENT reviews (#PCDATA)>
+    <!ELEMENT filenamePic (#PCDATA)>
+    <!ELEMENT promoURL (#PCDATA)>
+    <!ELEMENT availability (#PCDATA)>
+    <!ELEMENT specialEvent (#PCDATA)>
+    <!ELEMENT xmlImage (#PCDATA)>
+
+  ]>
+
+<goHoliday>
+  <package>
+    <packageName> Package 1 </packageName>
+    <description>Visit australia's greatest wonder Uluru.</description>
+    <cost>$3000 AUD</cost>
+    <nightNo>5</nightNo>
+    <popularity>4/5</popularity>
+    <accommodationOptions>
+      <location>Australia, Uluru</location>
+      <additionalCost>Included in package</additionalCost>
+    </accommodationOptions>
+    <couponCode>ROCK</couponCode>
+    <reviews>"Good view" - Steve Craft</reviews>
+    <filenamePic>images/uluru.png</filenamePic>
+    <promoURL>https://www.uluru.com</promoURL>
+    <availability>24/7</availability>
+    <specialEvent>Indigenous history walk</specialEvent>
+    <xmlImage>images/uluru.jpg</xmlImage>
+  </package>
+
+  <package>
+    <packageName> Package 2 </packageName>
+    <description>Explore the great flora and fauna in this safari hotel.</description>
+    <cost>$3300 AUD</cost>
+    <nightNo>3</nightNo>
+    <popularity>4/5</popularity>
+    <accommodationOptions>
+      <location>South Africa, Cape Town</location>
+      <additionalCost>$2000 travel and return costs, $100 AUD room service</additionalCost>
+    </accommodationOptions>
+    <couponCode>SAFARI</couponCode>
+    <reviews>"Pretty good"-Cill Blinton</reviews>
+    <filenamePic>images/southafrica.png</filenamePic>
+    <promoURL>https://www.tajhotels.com/en-in/taj/taj-cape-town</promoURL>
+    <availability>24/7</availability>
+    <specialEvent>Animal Spottings</specialEvent>
+    <xmlImage>images/southafrica.png</xmlImage>
+  </package>
+
+  <package>
+    <packageName> Package 3 </packageName>
+    <description>Experience true luxury in the center of Germany's capital, Berlin.</description>
+    <cost>$4000 AUD</cost>
+    <nightNo>2</nightNo>
+    <popularity>5/5</popularity>
+    <accommodationOptions>
+      <location>Germany, Berlin</location>
+      <additionalCost>$2000 travel and return costs</additionalCost>
+    </accommodationOptions>
+    <couponCode>BITTE</couponCode>
+    <reviews>"Cool people"-Rad guy</reviews>
+    <filenamePic>images/germany.png</filenamePic>
+    <promoURL>https://www.regenthotels.com/regent-berlin</promoURL>
+    <availability>24/7</availability>
+    <specialEvent>Beer tasting</specialEvent>
+    <xmlImage>images/germany.png</xmlImage>
+  </package>
+
+</goHoliday>

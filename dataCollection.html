@@ -1,0 +1,257 @@
+<!--
+	Filename: dataCollection.html
+	Author: Connor Marsden
+	Student Number: c3349479
+	Creation date: 27/10/2020
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--Linking CSS-->
+        <link rel="styleSheet" href="style.css">
+        <meta charset="UTF-8">
+        <!--Setting website tab title name-->
+        <title>Form | goHoliday</title>
+    
+        <!--Java validator for incorrect inputs-->
+        <script type="text/javascript">
+            function check()
+                {
+                    //If customer name is not entered alert to input name and return
+                    if (document.goHolidayFaR.customerName.value.trim()=="")
+                        {
+                            alert("Please fill in name");
+                            return false;
+                        }
+                    //If phone number is not entered alert to input phone number and return
+                    if (document.goHolidayFaR.phoneNum.value.trim()=="")
+                        {
+                            alert("Please fill in phone number");
+                            return false;
+                        }
+                    //If inputs both yes and no for recommendation question alert to only choose one and return
+                    if (document.goHolidayFaR.recommend[0].checked && document.goHolidayFaR.recommend[1].checked && document.goHoliday.recommend[2].checked)
+                        {
+                            alert("Please only choose one response")
+                            return false;
+                        }
+                    //If inputs both yes and no for coupon question alert to only choose one and return
+                    if (document.goHolidayFaR.coupon[0].checked && document.goHolidayFaR.coupon[1].checked && document.gHolidayFaR.coupon[2].checked)
+                        {
+                            alert("Please only choose one response")
+                            return false;
+                        }
+                    //If inputs both yes and no for coupon question alert to only choose one and return
+                    if (document.goHolidayFaR.wait[0].checked && document.goHolidayFaR.coupon[1].checked && document.goHolidayFaR.coupon[2].checked)
+                        {
+                            alert("Please only choose one response");
+                            return false;
+                        }
+                    //If inputs both yes and no for question on recent holiday alert to only choose one and return
+                    if (document.goHolidayFaR.recent[0].checked && document.goHolidayFaR.recent[1].checked && document.goHolidayFaR.pricing[2].checked)
+                        {
+                            alert("Please only choose one response");
+                            return false;
+                        }
+                    //If inputs both yes and no for question on pricing alert to only choose one and return
+                    if (document.goHolidayFaR.pricing[0].checked && document.goHolidayFaR.pricing[1].checked && document.goHolidayFaR.pricing[2].checked)
+                        {
+                            alert("Please only choose one response");
+                            return false;
+                        }
+                    //If none of the other if statements return true
+                    return true
+                }
+            </script>
+        </head>
+    <body>
+            <!--References a class to format the text and box surrounding it-->
+            <h1 class="headerbox">goHoliday Vacation Form</h1>
+            <!--In p references a class to format surrounding underhead box-->
+            <p class="underheaderbox">
+                <a href = "index.html"> Home</a>	<!--Navigates to home page-->
+            </p>
+            <!--Adds tag that formats white box surrounding all of main-->
+            <div id="xslBackgroundBox">
+            <!--Sends form data to link when form submitted-->
+            <form name="goHolidayFaR" method="post" action="http://jkorpela.fi/cgi-bin/echo.cgi" onSubmit="return check()">
+                <input type="hidden" name="_recipient" value="http://jkorpela.fi/cgi-bin/echo.cgi">
+                <!--Input for customers name-->
+               	<div>
+                    <label for="customerName">Name</label>
+                    <br>
+                    <input type="text" name="customerName" id="customerName">
+                </div>
+               
+                <!--Text input for customers phone number-->
+                <div>
+                    <label for="phoneNum">Phone Number</label>
+                    <br>
+                    <input type="text" name="phoneNumber" id="phoneNum">
+                </div>
+
+                <!--Text input for customers email-->
+                <div>
+                    <label>Email
+                    <br> 
+					<input type="email" name="email" id="email">
+					</label>
+                </div>
+
+                <!--Drop down choice input for customers package type-->
+                <div>
+                    What class of vacation was your chosen package? 
+                    <div id="package">
+                        <select name="packageType">
+                            <option>Luxury</option>
+                            <option>Budget</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!--Drop down choice input for customers package number-->
+                <div>
+                    What was the package Number?
+                    <div id="package">
+                        <select name="packageNum">
+                        	<option>1</option>
+                        	<option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <!--Drop down choice input for customers previous submitted numbers-->
+                <div>
+                    How many previous holidays have you submitted?
+                    <div id="package">
+                        <select name="packageNum">
+                        	<option>0</option>
+                        	<option>1</option>
+                            <option>2-4</option>
+                            <option>5-10</option>
+                            <option>10+</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <!--Rating system using radio multiple choice input-->
+                <div>
+                    How would you rate your holiday experience?
+                    <div id="rating">
+                    	
+                        <input type="radio" name="rating" value="0 Stars" id="rating0">
+                        <label for="rating0">0/5 Stars</label><br>
+                        
+                        <input type="radio" name="rating" value="1 Star" id="rating1">
+                        <label for="rating1">1/5 Stars</label><br>
+                        
+                        <input type="radio" name="rating" value="2 Stars" id="rating2">
+                        <label for="rating2">2/5 Stars</label><br>
+                        
+                        <input type="radio" name="rating" value="3 Stars" id="rating3">
+                        <label for="rating3">3/5 Stars</label><br>
+                        
+                        <input type="radio" name="rating" value="4 Stars" id="rating4">
+                        <label for="rating4">4/5 Stars</label><br>
+                        
+                        <input type="radio" name="rating" value="5 Stars" id="rating5">
+                        <label for="rating5">5/5 Stars</label><br>
+                    </div>
+                </div>
+                <br>
+
+                <!--Drop down input choice for holiday busyness-->
+                <div>
+                    How busy was your holiday?
+                    <div id="busy">
+                        <select name="population">
+                            <option>Very Quiet</option>
+                            <option>Quiet</option>
+                            <option>Average</option>
+                            <option>Busy</option>
+                            <option>Very Busy</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                
+                <!--Yes or no choice question-->
+                <div>
+                    Would you recommend goHoliday Vacations to others?<br/>
+                    <div id="recommend">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="recommend" value="yes" id="yes">
+                        <label for="no">No</label>
+                        <input type="radio" name="recommend" value="no" id="no">
+                </div>
+                
+                <!--Yes or no choice question-->
+                <div>
+                    Was there a known coupon code?
+                    <div id="coupon">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="coupon" value="yes" id="yes">
+                    
+                        <label for="no">No</label>
+                        <input type="radio" name="coupon" value="no" id="no">
+                    </div>
+                </div>
+                
+                <!--Yes or no choice question-->
+                <div>
+                    Was accomodation pricing included?
+                    <div id="pricing">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="pricingIncluded" value="yes" id="yes">
+                    
+                        <label for="no">No</label>
+                        <input type="radio" name="pricingIncluded" value="no" id="no">
+                    </div>
+                </div>
+
+                <!--Yes or no choice question-->
+                <div>
+                    Was the package avaliable at the time you first went to purchase it?
+                    <div id="wait">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="wait" value="yes" id="yes">
+                    
+                        <label for="no">No</label>
+                        <input type="radio" name="wait" value="no" id="no">
+                    </div>
+                </div>
+                
+                <!--Yes or no choice question-->
+                <div>
+                    Have you been on a holiday in the past 5 years?
+                    <div id="recent">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="recent" value="yes" id="yes">
+                    
+                        <label for="no">No</label>
+                        <input type="radio" name="recent" value="no" id="no">
+                    </div>
+                </div>
+                <br>
+                <div>
+                	Please leave a review describing your holiday experience 
+                    <br>        
+                    <textarea name="comments" maxlength="500" style="height:100px; width:400px"></textarea>	
+                </div>
+
+                <input type="submit" value="Finish and Submit"> 
+                    <input type="reset">   
+            </form>
+        
+		    <hr>
+            <address id="copyright"> <!--Adds copyright class-->
+                Copyright (c) 2020 by Connor Marsden (c3349479)<br/>
+                <a href="https://www.google.com.au">c3349479@uon.edu.au</a><br/>
+                SENG1050 - Assignment 2<br/> 
+            </address>
+        </div>
+    </body>
+</html>
