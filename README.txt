@@ -1,5 +1,5 @@
 Hello to whoever it may concern! unfortunately due to alot of security weaknesses in XML the files may be incompatible with browsers
-Student Number: c3349479
+By: Connor Marsden
 Files Included: index.html, style.css, goHolidayTemplate.xml, goHoliday-xslt.xsl, budgetHolidays.xml, luxuryHolidays.xml and images file
 Image file containted;
     background.jpg      ref= https://www.pinterest.com.au/pin/409194316119923989
